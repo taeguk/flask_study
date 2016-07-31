@@ -23,7 +23,7 @@ from werkzeug.security import check_password_hash, generate_password_hash
 DATABASE = 'minitwit.db'
 PER_PAGE = 30
 DEBUG = True
-SECRET_KEY = 'development key'
+SECRET_KEY = 'v1.0'
 
 # create our little application :)
 app = Flask(__name__)
@@ -249,4 +249,4 @@ app.jinja_env.filters['gravatar'] = gravatar_url
 
 if __name__ == '__main__':
     init_db()
-    app.run()
+    app.run(host='0.0.0.0')

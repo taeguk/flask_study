@@ -59,7 +59,7 @@ def __get_download_info(photolog_id, prefix_filename=''):
                                download_filename, 
                                as_attachment=True, 
                                mimetype='image/jpg')
-    
+
     
 @photolog.route('/photo/download/<photolog_id>')
 @login_required
